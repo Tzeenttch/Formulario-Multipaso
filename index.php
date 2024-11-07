@@ -27,7 +27,7 @@ if (!empty($muculoAEntrenar)) {
     header('Location: templates/templatePlanMejora.php');
 }
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST['datosUsuario'])) {
+if (!empty($_POST['datosUsuario'])) {
 
     $_SESSION['planEntrenamieto'] = $_POST['planPecho'];
     $planEscogido = $_SESSION['planEntrenamieto'];
